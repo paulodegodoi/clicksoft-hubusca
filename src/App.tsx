@@ -1,8 +1,11 @@
-import React from 'react';
-
 import ProjectRouter from './Routes';
+import { UserContextProvider } from './context';
 
-const App = () => <ProjectRouter />
+const App = () => (
+    <UserContextProvider>
+        <ProjectRouter />
+    </UserContextProvider>
+)
 
 export default App;
  

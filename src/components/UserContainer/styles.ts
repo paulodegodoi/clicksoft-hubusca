@@ -6,7 +6,7 @@ export const Section = styled.section`
     background: rgba(255, 255, 255, 0.95);
     border-radius: 10px;
     margin-top: 15px;
-    padding: 5px 5px;
+    padding: 10px 5px;
     display: flex;
     flex-wrap: wrap;
 `;
