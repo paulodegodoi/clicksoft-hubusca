@@ -1,5 +1,5 @@
-import ProjectRouter from './Routes';
-import { UserContextProvider } from './context';
+import ProjectRouter from './Routes'
+import { UserContextProvider } from './context'
 
 const App = () => (
     <UserContextProvider>
@@ -7,5 +7,5 @@ const App = () => (
     </UserContextProvider>
 )
 
-export default App;
+export default App
  
