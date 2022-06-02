@@ -4,26 +4,18 @@ type Props = {
     children: ReactNode
 }
 
-// interface UserContextType {
-//     userData: Object,
-//     setUserData: Object
-// }
-
-// interface User {
-//     login: string
-//     id: number
-//     avatar_url: string
-// }
-
 export const UserContext = createContext([] as any);
 
 export const UserContextProvider = (props: Props) => {
     const [userData, setUserData] = useState({});
+    const [userRepos, setUserRepos] = useState({});
 
     return (
         <UserContext.Provider value={{
             userData,
-            setUserData
+            userRepos,
+            setUserData,
+            setUserRepos
         }}>
             {props.children}
         </UserContext.Provider>

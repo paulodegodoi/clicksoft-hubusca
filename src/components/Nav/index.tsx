@@ -23,7 +23,10 @@ const Nav = () => {
     async function getUserData() {
         try {
             const response = await client.get(`/${nameSearched}`)
+            const userRepos = await client.get(`${nameSearched}/repos`)
+
             ctx.setUserData(response.data)
+            ctx.setUserRepos(userRepos.data)
         } catch(err) {
             console.log(err)
         }

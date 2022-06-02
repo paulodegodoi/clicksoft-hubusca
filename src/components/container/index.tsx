@@ -1,7 +1,8 @@
+import { JsxElement } from 'typescript'
 import { Container } from './styles'
 
 type Props = {
-    children: JSX.Element[]
+    children: JSX.Element | JSX.Element[]
 }
 
 const MainContainer = (props: Props) => (
