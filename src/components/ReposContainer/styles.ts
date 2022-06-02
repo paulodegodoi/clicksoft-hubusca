@@ -36,11 +36,14 @@ export const Repo = styled.div`
     box-shadow: 1px 1px 2px black;
 `;
 
-export const RepoTitle = styled.h2`
+export const RepoTitle = styled.a`
     font-size: 18px;
     width: 100%;
+    color: #444;
+    font-weight: 700;
     margin-top: .5rem;
     overflow: hidden;
+    text-decoration: none;
 
     &:hover {
         cursor: pointer;
@@ -52,7 +55,7 @@ export const RepoTitle = styled.h2`
 export const RepoInfo = styled.p`
     font-size: .8rem;
     font-weight: 500;
-    color: #777;
+    color: #444;
     width: 50%;
     overflow: hidden;
     margin-top: 5px;
@@ -61,7 +64,7 @@ export const RepoInfo = styled.p`
 export const RepoDescription = styled.p`
     font-size: 12px;
     font-weight: 500;
-    color: #777;
+    color: #444;
     width: 100%;
     height: 30px;
     margin-top: 5px;

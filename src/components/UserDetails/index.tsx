@@ -1,6 +1,4 @@
-import React from 'react'
-
-import {Container, Name, Username, Location, Id} from './styles'
+import {Container, Name, Username, Location,Span, Id} from './styles'
 
 type Props = {
     name: string
@@ -13,7 +11,7 @@ const UserDetails = ({name, login, id, location}: Props) => (
     <Container>
         <Name>{name}</Name>
         <Username>{login}</Username>
-        <Id>{id}</Id>
+        <Span>id#<Id>{id}</Id></Span>
         <Location>{location}</Location>
     </Container>
 )

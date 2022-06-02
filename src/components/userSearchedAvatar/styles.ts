@@ -15,7 +15,7 @@ export const ProfilePictureSearch = styled.img`
 
     &:hover {
         cursor: pointer;
-        border: 5px solid #ff7a00;
+        border: 5px solid #513894;
         transform: scale(1.1);
     }
 `;

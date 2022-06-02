@@ -1,5 +1,5 @@
-import { Title } from "./styles";
+import { Title } from "./styles"
 
 export default function TitleHistoric() {
-    return <Title>Histórico</Title>;
+    return <Title>Histórico</Title>
 }

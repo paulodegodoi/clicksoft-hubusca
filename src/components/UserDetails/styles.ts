@@ -22,7 +22,14 @@ export const Username = styled.h2`
     margin-top: .5rem;
 `;
 
-export const Id = styled.h2`
+export const Span = styled.p`
+    color: #777;
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: .5rem;
+`
+
+export const Id = styled.span`
     font-size: 13px;
     font-weight: 700;
     color: #777;

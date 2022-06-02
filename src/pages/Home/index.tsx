@@ -5,7 +5,6 @@ import { Warning } from './styles'
 import Container from "../../components/container"
 import Nav from '../../components/Nav'
 import UserContainer from '../../components/UserContainer'
-import UserAvatar from '../../components/UserAvatar'
 import UserDetails from '../../components/UserDetails'
 
 import { UserContext } from '../../context'
@@ -14,14 +13,15 @@ import UserSearchedAvatar from "../../components/userSearchedAvatar"
 
 const Home = () => {
     const { userData } = useContext(UserContext)
+    const { name, avatar_url, login, location } = userData
     return (
         <Container>
             <BtnHistoric />
             <Nav />
-                {userData?.name ? (
+                {name ? (
                     <UserContainer>
-                        <UserSearchedAvatar url={userData.avatar_url} altText={userData.login} />
-                        <UserDetails name={userData.name} login={userData.login} location={userData.location} />
+                        <UserSearchedAvatar url={avatar_url} altText={login} />
+                        <UserDetails name={name} login={login} location={location} />
                     </UserContainer>
                 ) : <Warning>Digite o username do GitHub</Warning>}
         </Container>

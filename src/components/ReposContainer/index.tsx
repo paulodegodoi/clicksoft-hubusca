@@ -6,7 +6,7 @@ import {
     RepoTitle,
     RepoInfo,
     RepoDescription,
-} from "./styles";
+} from "./styles"
 
 import { format } from "date-fns"
 import ptBR from "date-fns/locale/pt-BR"
@@ -15,7 +15,7 @@ type Props = {
     userRepos: []
 }
 
-type Repo = {
+interface Repo {
     id: number
     html_url: string
     name: string
@@ -31,17 +31,25 @@ const ReposContainer = (props: Props) => {
         <Section>
             <Title>Repositórios:</Title>
             <ListOfReposContainer>
-                {(props?.userRepos).map((repo: Repo) => {
+                {(props?.userRepos).map(({
+                    id,
+                    html_url,
+                    name,
+                    language,
+                    created_at,
+                    pushed_at,
+                    description
+                }: Repo) => {
 
                     const formattedCreatedAt = format(
-                        new Date(repo.created_at),
+                        new Date(created_at),
                         "dd MMM yyyy",
                         {
                             locale: ptBR
                         }
                     )
                     const formattedPushedAt = format(
-                        new Date(repo.pushed_at),
+                        new Date(pushed_at),
                         "dd MMM yyyy | HH:mm:ss",
                         {
                             locale: ptBR
@@ -49,21 +57,18 @@ const ReposContainer = (props: Props) => {
                     )
 
                     return (
-                        <Repo key={repo?.id}>
-                            <RepoTitle
-                                onClick={() =>
-                                    (window.location.href = `${repo.html_url}`)
-                                }
+                        <Repo key={id}>
+                            <RepoTitle href={html_url} target={"_blank"}
                             >
-                                {repo.name}
+                                {name}
                             </RepoTitle>
-                            <RepoInfo>Linguagem: {repo.language}</RepoInfo>
+                            <RepoInfo>Linguagem: {language}</RepoInfo>
                             <RepoInfo>Criado em: {formattedCreatedAt}</RepoInfo>
                             <RepoInfo>
                                 Último push: {formattedPushedAt}
                             </RepoInfo>
                             <RepoDescription>
-                                {repo?.description}
+                                {description}
                             </RepoDescription>
                         </Repo>
                     )

@@ -12,8 +12,8 @@ type Props = {
     login: string
 }
 
-const UserAvatar = (props: Props) => {
-    const navigate = useNavigate();
+const UserAvatar = ({url, altText, login}: Props) => {
+    const navigate = useNavigate()
     const handleOnClick = (route: string) => navigate(route)
 
     const ctx = useContext(UserContext)
@@ -26,15 +26,15 @@ const UserAvatar = (props: Props) => {
             ctx.setUserData(response.data)
             ctx.setUserRepos(userRepos.data)
 
-            handleOnClick("/userInfo");
+            handleOnClick("/userInfo")
         } catch (err) {
             console.log(err)
         }
     }
     
     return (
-        <Container onClick={() => getUserData(props.login)}>
-            <ProfileAvatar src={props.url} alt={props.altText}/>
+        <Container onClick={() => getUserData(login)}>
+            <ProfileAvatar src={url} alt={altText}/>
         </Container>
     )
 }

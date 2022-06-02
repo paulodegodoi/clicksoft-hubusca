@@ -6,18 +6,18 @@ type Props = {
     followers: number
 }
 
-const UserNumber = (props: Props) => (
+const UserNumber = ({reposNumber, following, followers}: Props) => (
     <Container>
         <NumberContainer>
-            <NumberInfo>{props.reposNumber}</NumberInfo>
+            <NumberInfo>{reposNumber}</NumberInfo>
             <NameInfo>Repositórios</NameInfo>
         </NumberContainer>
         <NumberContainer>
-            <NumberInfo>{props.following}</NumberInfo>
+            <NumberInfo>{following}</NumberInfo>
             <NameInfo>Seguindo</NameInfo>
         </NumberContainer>
         <NumberContainer>
-            <NumberInfo>{props.followers}</NumberInfo>
+            <NumberInfo>{followers}</NumberInfo>
             <NameInfo>Seguidores</NameInfo>
         </NumberContainer>
     </Container>

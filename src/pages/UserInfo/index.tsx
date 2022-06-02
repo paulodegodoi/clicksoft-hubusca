@@ -25,7 +25,7 @@ const UserInfo = () => {
                     name={userData.name}
                     login={userData.login}
                     location={userData.location}
-                    id={`id#${userData.id}`}
+                    id={userData.id}
                 />
                 <UserNumber
                     reposNumber={userData.public_repos}
