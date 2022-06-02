@@ -17,10 +17,8 @@ const Home = () => {
             <Nav />
                 {userData?.name ? (
                     <UserContainer>
-                        <React.Fragment>
-                            <UserAvatar url={userData.avatar_url} altText={userData.login}/>
-                            <UserDetails name={userData.name} login={userData.login} location={userData.location} />
-                        </React.Fragment>
+                        <UserAvatar url={userData.avatar_url} altText={userData.login} login={userData.login}/>
+                        <UserDetails name={userData.name} login={userData.login} location={userData.location} />
                     </UserContainer>
                 ) : <Warning>Digite o username do GitHub</Warning>}
         </Container>

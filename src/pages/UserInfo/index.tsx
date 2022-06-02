@@ -17,6 +17,7 @@ const UserInfo = () => {
                 <UserAvatar
                     url={userData.avatar_url}
                     altText={userData.login}
+                    login={userData.login}
                 />
                 <UserDetails
                     name={userData.name}
