@@ -1,3 +1,14 @@
+# HUBusca
+
+## Sobre o Projeto HUBusca
+
+O projeto HUBusca é uma aplicação que facilita a busca por usuários do GitHub, trazendo algumas informações como:
+    - Foto de perfil;
+    - Nome, username e localização;
+    - Listagem dos repositórios públicos do usuário;
+    - Acesso ao repositório na página do GitHub;
+    - Histórico dos usuários pesquisados.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
