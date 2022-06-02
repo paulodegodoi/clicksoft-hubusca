@@ -8,6 +8,9 @@ import {
     RepoDescription,
 } from "./styles";
 
+import { format } from "date-fns"
+import ptBR from "date-fns/locale/pt-BR"
+
 type Props = {
     userRepos: []
 }
@@ -30,6 +33,21 @@ const ReposContainer = (props: Props) => {
             <ListOfReposContainer>
                 {(props?.userRepos).map((repo: Repo) => {
 
+                    const formattedCreatedAt = format(
+                        new Date(repo.created_at),
+                        "dd MMM yyyy",
+                        {
+                            locale: ptBR
+                        }
+                    )
+                    const formattedPushedAt = format(
+                        new Date(repo.pushed_at),
+                        "dd MMM yyyy | HH:mm:ss",
+                        {
+                            locale: ptBR
+                        }
+                    )
+
                     return (
                         <Repo key={repo?.id}>
                             <RepoTitle
@@ -40,9 +58,9 @@ const ReposContainer = (props: Props) => {
                                 {repo.name}
                             </RepoTitle>
                             <RepoInfo>Linguagem: {repo.language}</RepoInfo>
-                            <RepoInfo>Criado em: {repo.created_at}</RepoInfo>
+                            <RepoInfo>Criado em: {formattedCreatedAt}</RepoInfo>
                             <RepoInfo>
-                                Último push: {repo.pushed_at}
+                                Último push: {formattedPushedAt}
                             </RepoInfo>
                             <RepoDescription>
                                 {repo?.description}

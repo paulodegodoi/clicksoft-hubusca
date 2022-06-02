@@ -9,31 +9,31 @@ export const Container = styled.div`
 `;
 
 export const Name = styled.h1`
-    width: 100%;
     font-size: 20px;
     font-weight: 700;
-    color: #000;
+    color: #777;
+    overflow: hidden;
 `;
 
 export const Username = styled.h2`
-    width: 100%;
     font-size: 13px;
     font-weight: 500;
     color: #513894;
-    margin: 0;
+    margin-top: .5rem;
 `;
 
 export const Id = styled.h2`
-    width: 100%;
     font-size: 13px;
     font-weight: 700;
     color: #777;
+    margin-top: .5rem;
 `;
 
 export const Location = styled.p`
     width: 100%;
     margin: 10px 0;
     font-size: 12px;
+    font-weight: 500;
     color: #777;
-    margin: 0;
+    margin-top: .5rem;
 `;

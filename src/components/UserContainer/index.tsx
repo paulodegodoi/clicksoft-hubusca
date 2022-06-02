@@ -1,7 +1,7 @@
 import { Section } from "./styles"
 
 type Props = {
-    children: JSX.Element[]
+    children: JSX.Element | JSX.Element[]
 }
 
 const UserContainer = (props: Props) => <Section>{props.children}</Section>
