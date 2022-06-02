@@ -15,6 +15,7 @@ import {
 
 import client from '../../services/client'
 import { UserContext } from "../../context"
+import { stringify } from "querystring"
 
 const Nav = () => {
     const ctx = useContext(UserContext)
@@ -27,16 +28,35 @@ const Nav = () => {
 
             ctx.setUserData(response.data)
             ctx.setUserRepos(userRepos.data)
+
+            setUserLocalStorage(response.data)
         } catch(err) {
             console.log(err)
         }
     }
 
+    interface Data {
+        avatar_url: string
+        name: string
+        login: string
+        location: string
+    }
+
+    function setUserLocalStorage({avatar_url, name, login, location}: Data) {
+        const user = {
+            avatar: avatar_url,
+            name: name,
+            login: login,
+            location: location,
+        }
+
+        localStorage.setItem(`${user.login}`, JSON.stringify(user))
+    }
+
     return (
         <NavSection>
-            <ImgClicksoft src={Clicksoft} />
-            <NavTitle>HUBusca 
-            </NavTitle>
+            <ImgClicksoft src={Clicksoft} alt="Clicksoft"/>
+            <NavTitle>HUBusca</NavTitle>
             <NavInputContainer>
                 <NavInput value={nameSearched} onChange={e => setNameSearched(e.target.value)}/>
                 <NavSearchButton onClick={getUserData}>
