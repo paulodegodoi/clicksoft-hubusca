@@ -7,12 +7,14 @@ import UserDetails from "../../components/UserDetails"
 import UserNumber from "../../components/UserSocialDetails"
 import ReposContainer from "../../components/ReposContainer"
 import { UserContext } from "../../context"
+import BtnBack from "../../components/layout/buttons/btnBack"
 
 const UserInfo = () => {
     const { userData, userRepos } = useContext(UserContext)
 
     return (
         <Container>
+            <BtnBack />
             <UserContainer>
                 <UserAvatar
                     url={userData.avatar_url}
