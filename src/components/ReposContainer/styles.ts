@@ -9,8 +9,8 @@ export const Section = styled.section`
     margin-top: 15px;
     padding: 0px 20px 30px 35px;
 
-    @media (max-width: 430px) {
-        width: 300px;
+    @media (max-height: 430px) {
+        height: 300px;
     }
 `;
 

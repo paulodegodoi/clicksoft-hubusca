@@ -3,10 +3,10 @@ import React from 'react'
 import {Container, Name, Username, Location, Id} from './styles'
 
 type Props = {
-    name: string;
-    login: string;
-    id?: number;
-    location: string;
+    name: string
+    login: string
+    id?: string
+    location: string
 }
 
 const UserDetails = ({name, login, id, location}: Props) => (

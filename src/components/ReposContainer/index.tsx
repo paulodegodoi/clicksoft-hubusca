@@ -17,6 +17,8 @@ type Repo = {
     html_url: string
     name: string
     language: string
+    created_at: string
+    pushed_at: string
     description: string
 }
 
@@ -38,20 +40,19 @@ const ReposContainer = (props: Props) => {
                                 {repo.name}
                             </RepoTitle>
                             <RepoInfo>Linguagem: {repo.language}</RepoInfo>
-                            <RepoInfo>Criado em: </RepoInfo>
+                            <RepoInfo>Criado em: {repo.created_at}</RepoInfo>
                             <RepoInfo>
-                                Último push: 
+                                Último push: {repo.pushed_at}
                             </RepoInfo>
                             <RepoDescription>
                                 {repo?.description}
                             </RepoDescription>
                         </Repo>
-                    );
+                    )
                 })}
-                ;
             </ListOfReposContainer>
         </Section>
-    );
-};
+    )
+}
 
-export default ReposContainer;
+export default ReposContainer

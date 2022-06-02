@@ -1,11 +1,10 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom'
 
-import {Container, ProfileAvatar} from './styles';
+import {Container, ProfileAvatar} from './styles'
 
 type Props = {
-    url: string;
-    altText: string;
+    url: string
+    altText: string
 }
 
 const UserAvatar = (props: Props) => {
