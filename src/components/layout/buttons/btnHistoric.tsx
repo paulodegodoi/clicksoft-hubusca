@@ -1,11 +1,10 @@
-import { Btn } from "./btnBackStyles";
+import { useNavigate } from "react-router-dom"
 
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Btn } from "./btnBackStyles"
 
 export default function BtnHistoric() {
-    const navigate = useNavigate();
+    const navigate = useNavigate()
     const handleOnClick = (route: string) => navigate(route);
 
-    return <Btn onClick={() => handleOnClick("/historic")}>Histórico</Btn>;
+    return <Btn onClick={() => handleOnClick("/historic")}>Histórico</Btn>
 }

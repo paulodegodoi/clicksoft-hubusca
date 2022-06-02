@@ -1,12 +1,15 @@
 import { ReactNode } from 'react'
-import { Container } from './styles'
+import { Container, Footer, Link } from './styles'
 
 type Props = {
     children: ReactNode
 }
 
 const MainContainer = (props: Props) => (
-    <Container>{props.children}</Container>
+    <Container>
+        {props.children}
+        <Footer>Developed by <Link href="https://github.com/paulodegodoi">Paulo Godoi &#169;</Link></Footer>
+    </Container>
 )
 
 export default MainContainer

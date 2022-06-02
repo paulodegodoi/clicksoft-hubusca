@@ -33,7 +33,7 @@ export const Location = styled.p`
     width: 100%;
     margin: 10px 0;
     font-size: 12px;
-    font-weight: 500;
+    font-weight: 700;
     color: #777;
     margin-top: .5rem;
 `;

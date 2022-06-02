@@ -5,6 +5,8 @@ import UserDetails from '../../components/UserDetails'
 import TitleHistoric from '../../components/layout/titles/titleHistoric'
 import BtnBack from '../../components/layout/buttons/btnBack'
 
+import { HistoricContainer } from './styles'
+
 
 const Historic = () => {
     const usersJson = Object.values(localStorage)
@@ -14,7 +16,7 @@ const Historic = () => {
         <Container>
             <TitleHistoric />
             <BtnBack />
-            <div>
+            <HistoricContainer>
             {users.map((user, index) => {
                 return (
                     <UserContainer key={index}>
@@ -31,7 +33,7 @@ const Historic = () => {
                     </UserContainer>
                 )
             })}
-            </div>
+            </HistoricContainer>
         </Container>
     )
 }

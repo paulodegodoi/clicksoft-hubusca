@@ -1,11 +1,10 @@
-import { Btn } from "./btnBackStyles";
+import { useNavigate } from "react-router-dom"
 
-import React from "react";
-import { useNavigate } from "react-router-dom";
+import { Btn } from "./btnBackStyles"
 
 export default function BtnBack() {
-    const navigate = useNavigate();
-    const handleOnClick = (route: string) => navigate(route);
+    const navigate = useNavigate()
+    const handleOnClick = (route: string) => navigate(route)
 
-    return <Btn onClick={() => handleOnClick("/")}>Voltar</Btn>;
+    return <Btn onClick={() => handleOnClick("/")}>Voltar</Btn>
 }
