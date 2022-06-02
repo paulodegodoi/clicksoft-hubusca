@@ -7,6 +7,7 @@ export const Section = styled.section`
     border-bottom: 10px solid #513894;
     border-radius: 10px;
     margin-top: -15px;
+    margin-bottom: 1.5rem;
     padding-left: 15px;
     padding-bottom: .5rem;
 `;

@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const HistoricContainer = styled.div`
     height: auto;
-    max-height: 450px;
+    max-height: 400px;
     width: 450px;
     background: #302b63;
     padding: 1rem;

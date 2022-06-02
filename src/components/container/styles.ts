@@ -17,6 +17,10 @@ export const Footer = styled.footer`
     height: 50px;
     color: #fff;
     text-align: center;
+
+    @media (max-height: 650px) {
+        height: auto;
+    }
 `
 
 export const Link = styled.a`
