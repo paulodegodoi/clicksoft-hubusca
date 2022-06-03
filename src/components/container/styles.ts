@@ -8,6 +8,11 @@ export const Container = styled.main`
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    @media (max-width: 650px) {
+        padding-top: 1rem;
+        justify-content: flex-start;
+    }
 `
 
 export const Footer = styled.footer`
@@ -18,8 +23,8 @@ export const Footer = styled.footer`
     color: #fff;
     text-align: center;
 
-    @media (max-height: 650px) {
-        height: auto;
+    @media (max-width: 650px) {
+        height: 30px;
     }
 `
 

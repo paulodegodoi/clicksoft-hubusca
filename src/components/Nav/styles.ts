@@ -7,6 +7,11 @@ export const NavSection = styled.nav`
     border-radius: 10px;
     display: flex;
     flex-direction: column;
+
+    @media (max-width: 650px) {
+        width: 90%;
+        justify-content: center;
+    }
 `;
 
 export const NavTitle = styled.h1`
@@ -44,6 +49,11 @@ export const NavInput = styled.input`
         outline: none;
         width: 220px;
         transition: 0.4s ease;
+    }
+
+    @media (max-width: 650px) {
+        width: 80%;
+        height: 35px;
     }
 `;
 

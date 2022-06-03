@@ -11,4 +11,8 @@ export const HistoricContainer = styled.div`
     flex-direction: column;
     align-items: center;
     overflow-y: scroll;
+
+    @media (max-width: 650px) {
+        width: 90%;
+    }
 `

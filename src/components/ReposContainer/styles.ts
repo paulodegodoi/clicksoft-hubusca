@@ -10,6 +10,11 @@ export const Section = styled.section`
     margin-bottom: 1.5rem;
     padding-left: 15px;
     padding-bottom: .5rem;
+
+    @media (max-width: 650px) {
+        width: 90%;
+        padding: 20px;
+    }
 `;
 
 export const Title = styled.h1`

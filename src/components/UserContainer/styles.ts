@@ -10,4 +10,8 @@ export const Section = styled.section`
     display: flex;
     flex-wrap: wrap;
     border-top: 10px solid #513894;
+    
+    @media (max-width: 650px) {
+        width: 90%;
+    }
 `;
