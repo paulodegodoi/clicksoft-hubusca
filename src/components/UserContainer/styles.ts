@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const Section = styled.section`
     width: 400px;
@@ -14,4 +14,4 @@ export const Section = styled.section`
     @media (max-width: 650px) {
         width: 90%;
     }
-`;
+`

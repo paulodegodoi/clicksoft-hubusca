@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const Section = styled.section`
     width: 400px;
@@ -7,27 +7,30 @@ export const Section = styled.section`
     border-bottom: 10px solid #513894;
     border-radius: 10px;
     margin-top: -15px;
-    margin-bottom: 1.5rem;
     padding-left: 15px;
-    padding-bottom: .5rem;
+    padding-bottom: 10px;
 
     @media (max-width: 650px) {
         width: 90%;
         padding: 20px;
     }
-`;
+`
 
 export const Title = styled.h1`
     font-weight: 700;
     margin-top: 10px;
     text-align: center;
-`;
+`
 
 export const ListOfReposContainer = styled.div`
     height: 300px;
     margin-top: 1rem;
     overflow-y: scroll;
-`;
+
+    @media (max-width: 650px) {
+        height: 250px;
+    }
+`
 
 export const Repo = styled.div`
     height: 150px;
@@ -36,11 +39,15 @@ export const Repo = styled.div`
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: .5rem;
     padding: 10px 10px 20px 10px;
-    padding-top: 0;
     margin-bottom: 10px;
-    overflow: hidden;
     box-shadow: 1px 1px 2px black;
-`;
+    overflow: hidden;
+
+    @media (max-width: 650px) {
+        padding: 0 15px;
+        transform: scale(1.05);
+    }
+`
 
 export const RepoTitle = styled.a`
     font-size: 18px;
@@ -56,7 +63,7 @@ export const RepoTitle = styled.a`
         color: #513894;
         text-decoration: underline;
     }
-`;
+`
 
 export const RepoInfo = styled.p`
     font-size: .8rem;
@@ -65,7 +72,7 @@ export const RepoInfo = styled.p`
     width: 50%;
     overflow: hidden;
     margin-top: 5px;
-`;
+`
 
 export const RepoDescription = styled.p`
     font-size: 12px;
@@ -76,4 +83,9 @@ export const RepoDescription = styled.p`
     margin-top: 5px;
     line-height: 1.2;
     margin-top: 10px;
-`;
+`
+
+export const Span = styled.span`
+    color: #513894;
+    font-weight: 700;
+`

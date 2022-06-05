@@ -9,10 +9,10 @@ export const NavSection = styled.nav`
     flex-direction: column;
 
     @media (max-width: 650px) {
+        margin-top: 2rem;
         width: 90%;
-        justify-content: center;
     }
-`;
+`
 
 export const NavTitle = styled.h1`
     margin: 0;
@@ -22,7 +22,7 @@ export const NavTitle = styled.h1`
     font-weight: 700;
     text-align: center;
     width: 100%;
-`;
+`
 
 export const ImgClicksoft = styled.img`
     width: 30px;
@@ -35,7 +35,7 @@ export const NavInputContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-`;
+`
 
 export const NavInput = styled.input`
     width: 200px;
@@ -55,7 +55,7 @@ export const NavInput = styled.input`
         width: 80%;
         height: 35px;
     }
-`;
+`
 
 export const NavSearchButton = styled.button`
     width: 30px;
@@ -73,4 +73,4 @@ export const NavSearchButton = styled.button`
         transition: ease 0.3s;
         cursor: pointer;
     }
-`;
+`

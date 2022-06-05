@@ -14,8 +14,8 @@ const Historic = () => {
     
     return (
         <Container>
-            <TitleHistoric />
             <BtnBack />
+            <TitleHistoric />
             <HistoricContainer>
             {users.map((user, index) => {
                 return (

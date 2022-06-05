@@ -6,6 +6,7 @@ import {
     RepoTitle,
     RepoInfo,
     RepoDescription,
+    Span
 } from "./styles"
 
 import { format } from "date-fns"
@@ -62,10 +63,12 @@ const ReposContainer = (props: Props) => {
                             >
                                 {name}
                             </RepoTitle>
-                            <RepoInfo>Linguagem: {language}</RepoInfo>
-                            <RepoInfo>Criado em: {formattedCreatedAt}</RepoInfo>
+                            {language ? (
+                                <RepoInfo>Linguagem: <Span>{language}</Span></RepoInfo>
+                            ) : <RepoInfo>Linguagem: <Span>Não definida</Span></RepoInfo>}
+                            <RepoInfo>Criado em: <Span>{formattedCreatedAt}</Span></RepoInfo>
                             <RepoInfo>
-                                Último push: {formattedPushedAt}
+                                Último push: <Span>{formattedPushedAt}</Span>
                             </RepoInfo>
                             <RepoDescription>
                                 {description}

@@ -1,10 +1,10 @@
-import styled from "styled-components";
+import styled from "styled-components"
 
 export const Container = styled.div`
     width: 50%;
     display: flex;
     justify-content: center;
-`;
+`
 
 export const ProfileAvatar = styled.img`
     width: 130px;
@@ -18,4 +18,4 @@ export const ProfileAvatar = styled.img`
         border: 5px solid #513894;
         transform: scale(1.1);
     }
-`;
+`
