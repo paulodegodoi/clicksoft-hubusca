@@ -16,7 +16,18 @@ O projeto HUBusca é uma aplicação que facilita a busca por usuários do GitHu
     <br>
         - Histórico dos usuários pesquisados.
     <br>
-    
+</div>
+
+## Principais Tecnologias usadas:
+<div>
+    - ReactJS
+    <br>
+    - TypeScript
+    <br>
+    - Styled-components
+    <br>
+    - Axios
+</div>
 <h1>Projeto hospedado no firebase</h1>
     <a href="https://clicksoft-hubusca.firebaseapp.com/">Clique para acessar o projeto hospedado</a>
     <br>
