@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 
 export const NavSection = styled.nav`
-    width: 400px;
+    width: 500px;
     height: 130px;
     background: #513894;
     border-radius: 10px;
