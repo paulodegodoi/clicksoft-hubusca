@@ -2,7 +2,7 @@ import styled from "styled-components"
 
 export const Section = styled.section`
     width: 500px;
-    height: auto;
+    /* height: auto; */
     background-color: #f0f4f5;
     border-bottom: 10px solid #513894;
     border-radius: 10px;
@@ -12,6 +12,7 @@ export const Section = styled.section`
 
     @media (max-width: 650px) {
         width: 90%;
+        height: 50%;
     }
 `
 
@@ -22,13 +23,13 @@ export const Title = styled.h1`
 `
 
 export const ListOfReposContainer = styled.div`
-    height: 300px;
+    height: 250px;
     margin: 10px;
     padding: .5rem;
     overflow-y: scroll;
 
     @media (max-width: 650px) {
-        height: 250px;
+        height: 85%;
     }
 `
 

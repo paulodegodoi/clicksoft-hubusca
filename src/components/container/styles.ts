@@ -6,12 +6,12 @@ export const Container = styled.main`
     background: linear-gradient(120deg, #0f0c29, #302b63, #24243e);
     display: flex;
     align-items: center;
-    justify-content: center;
     flex-direction: column;
+    padding-top: 60px;
 
     @media (max-width: 650px) {
-        padding-top: 2rem;
         justify-content: flex-start;
+        padding-top: 25px;
     }
 `
 

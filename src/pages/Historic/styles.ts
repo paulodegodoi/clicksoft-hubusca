@@ -2,10 +2,10 @@ import styled from "styled-components"
 
 export const HistoricContainer = styled.div`
     height: auto;
-    max-height: 400px;
-    width: 450px;
+    height: 400px;
+    width: 550px;
     background: #302b63;
-    padding: 1rem;
+    /* padding: 1rem; */
     border-radius: 10px;
     display: flex;
     flex-direction: column;
@@ -14,5 +14,6 @@ export const HistoricContainer = styled.div`
 
     @media (max-width: 650px) {
         width: 90%;
+        height: 70%;
     }
 `
