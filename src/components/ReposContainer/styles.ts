@@ -2,17 +2,15 @@ import styled from "styled-components"
 
 export const Section = styled.section`
     width: 500px;
-    /* height: auto; */
     background-color: #f0f4f5;
     border-bottom: 10px solid #513894;
     border-radius: 10px;
     margin-top: -15px;
-    padding-left: 15px;
     padding-bottom: 10px;
 
     @media (max-width: 650px) {
         width: 90%;
-        height: 50%;
+        height: 45%;
     }
 `
 

@@ -12,6 +12,7 @@ export const Container = styled.main`
     @media (max-width: 650px) {
         justify-content: flex-start;
         padding-top: 25px;
+        overflow-y: hidden;
     }
 `
 
@@ -24,7 +25,7 @@ export const Footer = styled.footer`
     text-align: center;
 
     @media (max-width: 650px) {
-        height: 30px;
+        margin-bottom: 10px;
     }
 `
 

@@ -14,6 +14,6 @@ export const HistoricContainer = styled.div`
 
     @media (max-width: 650px) {
         width: 90%;
-        height: 70%;
+        height: 66%;
     }
 `
