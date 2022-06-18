@@ -19,7 +19,7 @@ export const Footer = styled.footer`
     position: absolute;
     bottom: 0;
     width: 100vw;
-    height: 50px;
+    height: 30px;
     color: #fff;
     text-align: center;
 

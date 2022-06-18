@@ -5,7 +5,7 @@ export const Section = styled.section`
     height: auto;
     background-color: #f0f4f5;
     border-radius: 10px;
-    margin-top: 15px;
+    margin-top: .3rem;
     padding: 10px 5px;
     display: flex;
     flex-wrap: wrap;

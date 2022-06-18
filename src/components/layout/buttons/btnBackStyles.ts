@@ -8,7 +8,7 @@ export const Btn = styled.button`
     font-size: 1.2rem;
     color: #000;
     background-color: #fff;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     cursor: pointer;
     transition: 0.5s;
 

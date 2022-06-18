@@ -25,6 +25,7 @@ export const Title = styled.h1`
 export const ListOfReposContainer = styled.div`
     height: 300px;
     margin-top: 1rem;
+    padding: .5rem;
     overflow-y: scroll;
 
     @media (max-width: 650px) {
@@ -34,12 +35,13 @@ export const ListOfReposContainer = styled.div`
 
 export const Repo = styled.div`
     height: 150px;
+    max-width: 410px;
     display: flex;
     flex-wrap: wrap;
     background-color: rgba(0, 0, 0, 0.1);
-    border-radius: .5rem;
+    border-radius: 10px;
     padding: 10px 10px 20px 10px;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     box-shadow: 1px 1px 2px black;
     overflow: hidden;
 
