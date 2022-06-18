@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const Section = styled.section`
-    width: 400px;
+    width: 500px;
     height: auto;
     background-color: #f0f4f5;
     border-bottom: 10px solid #513894;
@@ -12,7 +12,6 @@ export const Section = styled.section`
 
     @media (max-width: 650px) {
         width: 90%;
-        padding: 20px;
     }
 `
 
@@ -24,7 +23,7 @@ export const Title = styled.h1`
 
 export const ListOfReposContainer = styled.div`
     height: 300px;
-    margin-top: 1rem;
+    margin: 10px;
     padding: .5rem;
     overflow-y: scroll;
 
@@ -35,19 +34,19 @@ export const ListOfReposContainer = styled.div`
 
 export const Repo = styled.div`
     height: 150px;
-    max-width: 410px;
     display: flex;
     flex-wrap: wrap;
     background-color: rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     padding: 10px 10px 20px 10px;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
     box-shadow: 1px 1px 2px black;
     overflow: hidden;
 
     @media (max-width: 650px) {
         padding: 0 15px;
-        transform: scale(1.05);
+        margin-bottom: 12px;
+        transform: scale(1.03);
     }
 `
 

@@ -1,7 +1,7 @@
 import styled from "styled-components"
 
 export const Section = styled.section`
-    width: 400px;
+    width: 500px;
     height: auto;
     background-color: #f0f4f5;
     border-radius: 10px;
