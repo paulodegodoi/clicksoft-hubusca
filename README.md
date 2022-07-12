@@ -28,7 +28,7 @@ O projeto HUBusca é uma aplicação que facilita a busca por usuários do GitHu
     <br>
     - Axios
 </div>
-<h1>Projeto hospedado no firebase</h1>
+<h2>Projeto hospedado no firebase</h2>
     <a href="https://clicksoft-hubusca.firebaseapp.com/">Clique para acessar o projeto hospedado</a>
     <br>
     <br>
